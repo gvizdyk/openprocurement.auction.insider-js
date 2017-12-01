@@ -101,10 +101,10 @@ module.exports = function(config) {
 
   // Travis configuration
   if (process.env.TRAVIS) {
-    configuration.browsers = ['Chrome_travis_ci'],
-    configuration.singleRun = true,
+    configuration.browsers = ['Chrome_travis_ci'];
+    configuration.singleRun = true;
     configuration.coverageReporter.type = 'lcovonly';
-  }
+  };
 
   config.set(configuration);
 
